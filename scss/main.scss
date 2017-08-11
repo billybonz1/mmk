@@ -1,0 +1,144 @@
+@import "bourbon";
+@import "vars.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+
+$hamburger-hover-opacity: 1;
+$hamburger-types: (elastic, elastic-r);
+$hamburger-layer-color: #000;
+@import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.vllaMakets {
+  padding: 1px;
+  &__heading {
+    margin-top: 129px;
+    margin-bottom: 75px;
+    font-family: "SeroPro";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    max-width: 735px;
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+    margin-bottom: 24px;
+  }
+  &__garanty {
+    background-image: url("../img/vlla_garantyBG.png");
+    background-repeat: repeat-x;
+    background-position: center center;
+    margin-bottom: 83px;
+  }
+  &__garantyImage {
+    float: left;
+    width: 180px;
+    height: 180px;
+    img {
+      width: 100%;
+    }
+  }
+  &__garantyText {
+    padding-left: 100px;
+    padding-right: 66px;
+    margin-left: 136px;
+    background-color: white;
+    h4 {
+      font-family: "SeroPro";
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 60px;
+      max-width: 425px;
+    }
+    p {
+      margin-top: 32px;
+      font-family: "SeroPro";
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+  }
+}
+
+.vllaStages {
+  background-color: rgba(228, 219, 219, 0.36);
+  padding: 1px;
+  &__heading {
+    font-family: "SeroPro";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+  &__itemLeft {
+    position: relative;
+    margin-top: 40px;
+    max-width: 500px;
+    line-height: 29px;
+    h4 {
+      font-family: "SeroPro";
+      font-size: 24px;
+      font-weight: 500;
+      max-width: 500px;
+    }
+    p {
+      font-family: "SeroPro";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+      margin-top: 35px;
+      max-width: 500px;
+    }
+    @media (max-width: 1200px) {
+      width: auto;
+      margin-top: 110px;
+      max-width: 90%;
+      margin-left: 20px;
+      margin-right: 100px;
+      h4, p {
+        width: 100%;
+      }
+    }
+  }
+  &__itemRight {
+    @extend .vllaStages__itemLeft;
+    /*background-image: url("../img/vlla_garantyBG.png");
+    background-repeat: repeat-x;
+    background-position: center center;*/
+    /* padding-left: 55%;*/
+    margin-left: 55%;
+    @media (max-width: 1200px) {
+      width: auto;
+      max-width: 90%;
+      margin-left: 20px;
+      margin-right: 100px;
+      margin-top: 110px;
+      h4, p {
+        width: 100%;
+      }
+    }
+  }
+  &__number {
+    position: absolute;
+    top: -75px;
+  }
+  &__iconLeft {
+    position: absolute;
+    top: -21px;
+    left: -100px;
+    @media (max-width: 1200px) {
+      right: -105px;
+      left: auto;
+    }
+  }
+  &__iconRight {
+    position: absolute;
+    top: -21px;
+    right: -105px;
+  }
+}
+
+//ALWAYS END
+@import "sketches.scss";
