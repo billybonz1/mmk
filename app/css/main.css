@@ -157,11 +157,27 @@
     height: 180px; }
     .vllaMakets__garantyImage img {
       width: 100%; }
+    @media (max-width: 500px) {
+      .vllaMakets__garantyImage {
+        float: none;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto; } }
   .vllaMakets__garantyText {
     padding-left: 100px;
     padding-right: 66px;
     margin-left: 136px;
     background-color: white; }
+    @media (max-width: 993px) {
+      .vllaMakets__garantyText {
+        padding-right: 5px; } }
+    @media (max-width: 500px) {
+      .vllaMakets__garantyText {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center; } }
     .vllaMakets__garantyText h4 {
       font-family: "SeroPro";
       font-size: 48px;
