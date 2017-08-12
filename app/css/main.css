@@ -726,12 +726,13 @@
   padding: 1px; }
   .vllaGalery__description h4 {
     margin-top: 29px;
-    margin-bottom: 53px;
+    height: 77px;
     color: #090a0b;
     font-family: "SeroPro";
     font-size: 30px;
     font-weight: 700;
-    line-height: 24px; }
+    line-height: 35px;
+    max-width: 450px; }
   .vllaGalery__description table {
     margin-bottom: 64px; }
   .vllaGalery__description td {
@@ -771,8 +772,10 @@
         border: 1px solid grey;
         -webkit-box-shadow: 3px 3px 3px black;
         box-shadow: 3px 3px 3px black;
-        opacity: 0.3; }
-        .vllaGalery__carousel ul li img:hover {
+        opacity: 0.3;
+        width: 226px;
+        height: 168px; }
+        .vllaGalery__carousel ul li img:hover, .vllaGalery__carousel ul li img.--active {
           opacity: 1; }
 
 .vllaGalery__arrowLeft, .vllaGalery__arrowRight {
@@ -798,7 +801,9 @@
   position: relative;
   overflow: hidden;
   height: 520px;
-  left: -9%; }
+  left: -10%; }
+  .vllaGalery__mainImage#palace {
+    left: 4%; }
   @media (max-width: 992px) {
     .vllaGalery__mainImage {
       left: 0;

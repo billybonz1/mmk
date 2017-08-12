@@ -220,12 +220,13 @@
     padding: 1px;
     h4 {
       margin-top: 29px;
-      margin-bottom: 53px;
+      height: 77px;
       color: #090a0b;
       font-family: "SeroPro";
       font-size: 30px;
       font-weight: 700;
-      line-height: 24px;
+      line-height: 35px;
+      max-width: 450px;
     }
     table {
       margin-bottom: 64px;
@@ -269,7 +270,9 @@
           border: 1px solid grey;
           box-shadow: 3px 3px 3px black;
           opacity: 0.3;
-          &:hover {
+          width: 226px;
+          height: 168px;
+          &:hover, &.--active{
             opacity: 1;
           }
         }
@@ -300,7 +303,10 @@
     position: relative;
     overflow: hidden;
     height: 520px;
-    left: -9%;
+    left: -10%;
+    &#palace {
+      left: 4%;
+    }
     @media (max-width: 992px) {
       left: 0;
       width: 90%;
@@ -314,3 +320,4 @@
     }
   }
 }
+
