@@ -179,6 +179,13 @@
   .vllaDT__circle img {
     width: 100%;
     opacity: 0.52; }
+  .vllaDT__circle--inside {
+    width: 36.6%;
+    height: 130%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.52; }
 
 .vllaMakets {
   padding: 1px; }

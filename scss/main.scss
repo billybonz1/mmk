@@ -58,6 +58,13 @@ $hamburger-layer-color: #000;
     left: 50%;
     top: 50%;
     transform: translate(-42%, -50%);
+    &--inside{
+      width: 36.6%;
+      height: 130%;
+      border-radius: 50%;
+      background-color: #ffffff;
+      opacity: 0.52;
+    }
   }
 }
 
