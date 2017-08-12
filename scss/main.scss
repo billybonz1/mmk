@@ -8,6 +8,61 @@ $hamburger-types: (elastic, elastic-r);
 $hamburger-layer-color: #000;
 @import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 
+.vllaDifferentTasks {
+  padding: 1px;
+}
+.vllaDT {
+  &__heading {
+    font-family: "SeroPro";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 550px;
+    margin-top: 62px;
+    margin-bottom: 83px;
+  }
+  &__item {
+    h4 {
+      min-height: 80px;
+      font-family: "SeroPro";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    p {
+      font-family: "SeroPro";
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+    margin-top: 75px;
+    margin-bottom: 65px;
+    display: block;
+    position: relative;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__circle {
+    max-width: 540px;
+    position: absolute;
+    img {
+      width: 100%;
+      opacity: 0.52;
+    }
+    left: 50%;
+    top: 50%;
+    transform: translate(-42%, -50%);
+  }
+}
+
+
+
 .vllaMakets {
   padding: 1px;
   &__heading {

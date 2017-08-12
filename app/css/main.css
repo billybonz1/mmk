@@ -132,6 +132,54 @@
     -webkit-transition-delay: 0.075s;
     transition-delay: 0.075s; }
 
+.vllaDifferentTasks {
+  padding: 1px; }
+
+.vllaDT__heading {
+  font-family: "SeroPro";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  max-width: 550px;
+  margin-top: 62px;
+  margin-bottom: 83px; }
+
+.vllaDT__item h4 {
+  min-height: 80px;
+  font-family: "SeroPro";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.vllaDT__item p {
+  font-family: "SeroPro";
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.vllaDT__image {
+  margin-top: 75px;
+  margin-bottom: 65px;
+  display: block;
+  position: relative;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .vllaDT__image img {
+    width: 100%; }
+
+.vllaDT__circle {
+  max-width: 540px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-42%, -50%);
+  -ms-transform: translate(-42%, -50%);
+  transform: translate(-42%, -50%); }
+  .vllaDT__circle img {
+    width: 100%;
+    opacity: 0.52; }
+
 .vllaMakets {
   padding: 1px; }
   .vllaMakets__heading {
