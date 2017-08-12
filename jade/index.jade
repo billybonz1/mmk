@@ -1,9 +1,119 @@
 extends layouts/html.jade
 block content
+    .galery-projects
+        .inner
+            .container-fluid
+                .row
+                    .col-xs-12
+                        .number-abs
+                            .line-back
+                            .circle-number
+                                p 2
+    //                    .title-all
+    //                        h2 Выполненные проекты
+    //                    .text-items-galery
+    //                        h3 Мечеть "Хазрет Султан"
+    //                        .ft-galery
+    //                            h3 Высокодетализированный макет выполнен:
+    //                            p - Масштаб......................................................1:200
+    //                            p - Подмакетник.............................................2600х2600 мм.
+    //                            p - Уличных фонарей с подсветкой............350 шт.
+    //                            p - Срок изготовления...................................25 дней
+    //                        .change-block-galety
+    //                            img(src='img/1-р.jpg')
+    //                        .bg-block
+    //    .galery-img
+    //        ul
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //.galery-projects.galert-projects-two
+    //    .inner
+    //        .container-fluid
+    //            .row
+    //                .col-xs-12
+    //                    .text-items-galery
+    //                        h3 Макет дворца "Мира и Согласия" <br>в разрезе
+    //                        .ft-galery
+    //                         h3 Высокодетализированный макет выполнен:
+    //                         p - Масштаб......................................................1:200
+    //                         p - Подмакетник.............................................2600х2600 мм.
+    //                         p - Уличных фонарей с подсветкой............350 шт.
+    //                         p - Срок изготовления...................................25 дней
+    //
+    //                    .change-block-galety
+    //                            img(src='img/1-р.jpg')
+    //
+    //                        .bg-block
+    //    .galery-img
+    //        ul
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //            li
+    //              img(src='img/2.png')
+    //.galery-projects.galery-projects-tree.clearfix
+    //    .inner
+    //        .container-fluid
+    //            .row
+    //                .col-xs-12
+    //                    .text-items-galery
+    //                        h3 Макет нового вокзала города<br> Астаны "Нұрлы жол"
+    //                        .ft-galery
+    //                            h3 Высокодетализированный макет выполнен:
+    //                            p - Масштаб......................................................1:200
+    //                            p - Подмакетник.............................................2600х2600 мм.
+    //                            p - Уличных фонарей с подсветкой............350 шт.
+    //                            p - Срок изготовления...................................25 дней
+    //                        .change-block-galety
+    //                            img(src='img/1-р.jpg')
+    //                        .bg-block
+    //    .galery-img
+    //        ul
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    //            li
+    //                img(src='img/2.png')
+    include _vlla_galery
     .vllaDifferentTasks
         .container
             .row
-                h4.vllaDT__heading Наши клиенты решают различные задачи
+                h4.col-md-12.vllaDT__heading
+                    .number-abs
+                        .line-back
+                        .circle-number
+                            p 3
+                    | Наши клиенты решают различные задачи
         .container
             .row
                 .vllaDT__item.col-xs-12.col-sm-4
@@ -31,58 +141,34 @@ block content
                 .vllaDT__item.col-xs-12.col-sm-4
                     h4 Обучение персонала
                     p Использование макета в качестве экспоната на выставке или же в другом людном месте это лучший метод для привлечения внимания потенциальных клиентов.
-
-
-
-
-
-    .vllaMakets
-        .container
-            .row
-                h4.col-cs-12.vllaMakets__heading Выполняем уникальные заказы любой сложности
-                .col-cs-12.vllaMakets__image
-                    img(src='img/vlla__maket.png')
-        .vllaMakets__garanty
-            .container
+    .director
+        .inner
+            .container-fluid
                 .row
-                    .col-xs-12.col-sm-8.col-sm-offset-1
-                        .clearfix
-                            .vllaMakets__garantyImage
-                                img(src='img/vlla__zont.png')
-                            .vllaMakets__garantyText
-                                h4 Гарантия на макет 3 года
-                                p Если на выполненном проекте сгорит лампочка - мы приедем чтобы ее заменить
+                    .col-xs-12
+                        .number-abs
+                            .line-back
+                            .circle-number
+                                p 4
+                        .title-all
+                            h2 Обсудите детали проекта <br>
+                               |с руководителем напрямую
+                        .director-info.clearfix
+                            .c-tre
+                                .name-h
+                                    h2 Салыкбаев<br> Ескандир<br> Кайратжанович
+                                    p Руководитель<br> проектов компании
+                                .foto-h
+                                    img(src='img/drec.png')
+                                .form-cost.forma-h
+                                    p Получите несколько вариантов комплектации<br>
+                                        | со сравнением стоимости и сроков<br> изготовления, а также ответы на все ваши <br>    вопросы
+                                    form
+                                        input(placeholder='Введите Ваше имя' id='name' required=)
+                                        input(placeholder='Введите Ваше имя' id='phone' required=)
+                                        button(class='btn btn_blue' name='send') Отправить
+    include _vlla
+    include _alsh
 
-    .vllaStages
-        .container
-            .row
-                h4.vllaStages__heading Этапы производства
 
-            .vllaStages__itemLeft
-                .vllaStages__number
-                    img(src='img/vlla_1.png')
-                h4 Разработка чертежей деталей будущего макета
-                .vllaStages__iconRight
-                    img(src='img/vlla__drawingsIcon.png')
-                p Это важнейший этап макетирования! Вы получаете лучшие решения, опробованные на сотнях других макетов. Проводится детальный анализ исходных данных и целей макета.
-            .vllaStages__itemRight
-                .vllaStages__number
-                    img(src='img/vlla_2.png')
-                h4 Подготовка материала для макета
-                .vllaStages__iconLeft
-                    img(src='img/vlla__materialIcon.png')
-                p Этот этап включает в себя резку деталей, изготовление деталей на 3д принтере! Все детали изготавливаются на высокоточном лазерном и фрезерно-гравировальном оборудовании с ЧПУ, что обеспечивает высокое качество и точность моделей.
-            .vllaStages__itemLeft
-                .vllaStages__number
-                    img(src='img/vlla_3.png')
-                h4 Покраска деталей макета
-                .vllaStages__iconRight
-                    img(src='img/vlla__paintIcon.png')
-                p Покраска выполняется в специальной камере с хорошей вентиляцией с применением аэрографа и бесшумного компрессора.
-            .vllaStages__itemRight
-                .vllaStages__number
-                    img(src='img/vlla_4.png')
-                h4 Сборка макета
-                .vllaStages__iconLeft
-                    img(src='img/vlla__assamblyIcon.png')
-                p Этот этап включает в себя сборку самого макета по чертежам разработчика, подготовки ландшафта, установки электронных опций, художественное оформление макета и установки прозрачного колпака
+

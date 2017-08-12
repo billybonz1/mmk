@@ -29,6 +29,566 @@
 
   }
 }
+body{
+  font-family: "SeroPro";
+}
+header{
+  padding: 44px 54px;
+  background: url(../img/mainbg.jpg) center;
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      padding: 44px 45px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      .col-xs-12{
+        text-align: center !important;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 490px){
+      padding: 44px 25px;
+    }
+  }
+}
+.inner{
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 
+.header__inner{
+  border-left: 1px solid #0f8ee8;
+  border-right: 1px solid #35b82a;
+  position: relative;
+  padding-top: 64px;
+  &:after,&:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to right, #0f8ee8, #35b82a);
+  }
+  &:after{
+    top: 0;
+  }
+  &:before{
+    bottom: 0;
+  }
+}
+.logo{
+  margin-top: -20px;
+  margin-left: -42px;
+  display: block;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+        margin-left: 0;
+      text-align: center;
+    }
+  }
+}
+.header__contacts{
+  max-width: 265px;
+  text-align: right;
+  margin-top: -10px;
+  display: inline-block;
+  vertical-align: top;
+  @if $adaptive == true {
+    @media (max-width: 1157px){
+      margin-bottom: 20px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      display: block;
+      max-width: inherit;
+      text-align: center;
+    }
+  }
+}
+.header__phone{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 4px;
+  &:hover{
+    color: #fff;
+  }
+}
 
+
+.header__email{
+  color: #2de5ec;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 11px;
+  display: block;
+  &:hover,&:focus{
+    color: #2de5ec;
+    text-decoration: underline;
+  }
+}
+
+
+.btn{
+  width: 210px;
+  height: 52px;
+  background-color: white;
+  border-radius: 26px;
+  color: #111a1f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: center;
+  border: 1px solid transparent;
+  display: inline-block;
+  &:hover,&:focus{
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+  }
+}
+
+.header__btn{
+  margin-left: 30px;
+  vertical-align: top;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      margin-left: 0;
+    }
+  }
+}
+
+
+.header__title{
+  padding-top: 35px;
+  h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 54px;
+  }
+  .btn_blue{
+    margin-top: 50px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 600px){
+      h1{
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 415px){
+      .btn_blue{
+        font-size: 18px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 440px){
+      h1{
+        font-size: 33px;
+        line-height: 35px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 390px){
+      h1{
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 345px){
+      h1{
+        font-size: 26px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.btn_blue{
+  max-width: 476px;
+  width: 100%;
+  height: 94px;
+  background-color: #2de5ec;
+  border-radius: 47px;
+  color: #0e0402;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 86px;
+}
+
+.header__adv{
+  padding-top: 85px;
+  padding-bottom: 155px;
+}
+
+.header__adv__item{
+  border: 5px solid rgba(255,255,255,.09);
+  float: left;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 12px;
+  padding: 54px 63px;
+  strong{
+    display: block;
+    color: #2de5ec;
+    font-size: 42px;
+    font-weight: 900;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1284px){
+      padding: 54px 50px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1180px){
+      padding: 54px 40px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1180px){
+      padding: 50px 35px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1060px){
+      padding: 45px 30px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1020px){
+      padding: 40px 25px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      margin: 15px 5px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 500px){
+      min-width: 300px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 390px){
+      min-width: 200px;
+      max-width: 200px;
+      padding: 40px 15px;
+      strong{
+        font-size: 33px;
+      }
+    }
+  }
+}
+.circle-bord{
+  position: absolute;
+  bottom: -25px;
+  right: -45px;
+  width: 109px;
+  height: 110px;
+  background-color: #2de5ec;
+  border-radius: 120px;
+  text-align: center;
+  img{
+    padding-top: 31px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 490px){
+      right: -20px;
+    }
+  }
+}
+
+.form-know{
+  position: relative;
+}
+.number-abs{
+  position: absolute;
+  top: 70px;
+  left: -60px;
+  .line-back{
+    width: 347px;
+    height: 2px ;
+    background-color: #2de5ec;
+    position: relative;
+    left: -100%;
+    top: 24px;
+  }
+  .circle-number{
+      border: 1px solid #2de5ec;
+      width: 50px;
+    border-radius: 120px;
+    text-align: center;
+      height: 50px;
+      p{
+        font-size:18px;
+        color: #2de5ec;
+        line-height: 52px;
+      }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      left: 0px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      top: 0;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 400px){
+      width: 50px;
+      height: 50px;
+      .line-back{
+        width: 50px;
+      }
+    }
+  }
+}
+
+
+.coast{
+  margin-top: 74px;
+  position: relative;
+  h2{
+    font-size:46px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight:bold;
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1350px){
+      padding-left: 50px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      padding-left: 0px;
+      h2{
+        padding-left: 50px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 622px){
+      h2{
+        font-size:40px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 563px){
+      h2{
+        font-size:35px;
+        line-height: 40px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 514px){
+      h2{
+        font-size:30px;
+        line-height: 40px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 424px){
+      h2{
+        font-size:27px;
+        line-height: 40px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 395px){
+      h2{
+        font-size:6vw;
+        line-height: 40px;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.form-cost{
+  margin-top: 54px;
+  .btn_blue{
+    max-width: 323px;
+    height: 73px;
+    line-height: 75px;
+  }
+  form{
+    input{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #fff;
+      background-color: transparent;
+      font-size: 16px;
+      line-height: 54px;
+      color: #fff;
+      margin-right: 39px;
+      max-width: 325px;
+      width: 100%;
+      padding-left: 27px;
+      @include placeholder{
+        color: #fff;
+        font-size: 16px;
+
+      }
+    }
+    button{
+      margin-left: 73px;
+    }
+    #name{
+      background-image: url("../img/shape-3.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    #phone{
+      background-image: url("../img/shape-4.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    @if $adaptive == true {
+      @media (max-width: 1350px){
+        button{
+          margin-left: 20px;
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 1247px){
+        button{
+          margin-left: 0px;
+        }
+        input{
+          max-width: 250px;
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 1077px){
+        button{
+          margin-left: 0px;
+          margin-top: 25px;
+        }
+
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 991px){
+        text-align: center;
+        input{
+          max-width: inherit;
+          display: block;
+        }
+
+      }
+    }
+  }
+}
+
+
+.proposal{
+  margin-top: 119px;
+  li{
+    float: left;
+    margin-right: 50px;
+    margin-left: -17px;
+    *{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  h3{
+    font-size:60px;
+    color: #2de5ec;
+    line-height: 24px;
+    font-weight:900;
+    position: relative;
+    opacity: 0.41;
+    left: 17px;
+    top: 13px;
+  }
+  p{
+    font-size:16px;
+    color: #fff;
+    line-height: 24px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1245px){
+      li{
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1176px){
+      li{
+        margin-left: 0;
+        margin-right: 5px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1161px){
+      ul{
+        text-align: center;
+      }
+      li{
+        float: none;
+        display: inline-block;
+        margin: 15px 15px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 522px){
+      h3{
+        left: 0;
+        top:0;
+        display: block;
+      }
+    }
+  }
+}
